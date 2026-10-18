@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceNote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">◉</span>
+      Voice<span>Note</span>
+    </a>
+ 
+    <nav>
+      <a href="#record">Record</a>
+      <a href="#notes">My Notes</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- HERO / RECORDING AREA -->
+    <section class="hero" id="record">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">SPEECH TO TEXT</p>
+
+        <h1>
+          Speak your thoughts.
+          <span>Save your ideas.</span>
+        </h1>
+
+        <p class="hero-text">
+          Record your voice and turn your words into editable text
+          instantly.
+        </p>
+
+        <div class="recorder">
+
+          <div class="status">
+            <span class="status-dot"></span>
+            <span id="statusText">Ready to record</span>
+          </div>
+
+          <div class="waveform" id="waveform">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <button id="recordBtn" class="record-btn">
+            <span class="mic">🎙️</span>
+          </button>
+
+          <p class="record-hint">
+            Tap the microphone and start speaking
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TRANSCRIPT -->
+    <section class="transcript-section">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LIVE TRANSCRIPT</p>
+          <h2>Your words appear here.</h2>
+        </div>
+
+        <button id="clearBtn" class="clear-btn">
+          Clear
+        </button>
+      </div>
+
+      <div class="transcript-box">
+        <textarea
+          id="transcript"
+          placeholder="Your spoken words will appear here..."
+        ></textarea>
+
+        <div class="transcript-footer">
+          <span id="wordCount">0 words</span>
+
+          <button id="saveBtn" class="save-btn">
+            💾 Save Note
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- SAVED NOTES -->
+    <section class="notes-section" id="notes">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR NOTES</p>
+          <h2>Saved voice notes.</h2>
+        </div>
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search notes..."
+        >
+      </div>
+
+      <div id="notesContainer" class="notes-container">
+        <div class="empty-state">
+          <span>📝</span>
+          <h3>No notes yet</h3>
+          <p>Your saved transcripts will appear here.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+      <div class="about-content">
+
+        <p class="eyebrow">ABOUT VOICENOTE</p>
+
+        <h2>
+          Your voice.
+          <span>Your ideas.</span>
+          Never lost.
+        </h2>
+
+        <p>
+          VoiceNote helps you capture your thoughts by turning
+          spoken words into editable text. Whether it's an idea,
+          reminder, meeting note, or quick thought, just speak
+          and let VoiceNote do the typing.
+        </p>
+
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <span>🎙️</span>
+          <h3>Speak</h3>
+          <p>
+            Record your thoughts naturally without typing.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span>📝</span>
+          <h3>Transcribe</h3>
+          <p>
+            Turn your speech into editable text.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <span>💾</span>
+          <h3>Save</h3>
+          <p>
+            Keep important ideas safely in your notes.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>© 2026 VoiceNote. Speak. Transcribe. Remember.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>
